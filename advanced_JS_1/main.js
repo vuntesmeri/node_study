@@ -25,7 +25,7 @@ class Employee {
     }
 
     get salary() {
-        return this._salary + ' USD'
+        return this._salary
     }
 }
 
@@ -34,15 +34,17 @@ class Programmer extends Employee {
         super(name, age, salary);
         this.lang = lang;
     }
-    set _salary(val) {
-        super._salary = val * 3
+    set salary(val) {
+        super.salary= val * 3
        return this._salary
     }
-
+    get salary() {
+        return this._salary + ' USD'
+    }
 }
 
 const prog_1 = new Programmer("Pavel", "16", 15000, "JS");
-console.log('Programmer_1 - ',prog_1)
+console.log('Programmer_1 - ',prog_1.salary)
 const prog_2 = new Programmer("Gregory", "23", 120000, "Java");
 console.log('Programmer_1 - ',prog_2)
 const prog_3 = new Programmer("Olga", "13", 5000, "HTML");
