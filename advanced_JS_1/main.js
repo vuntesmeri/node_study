@@ -35,7 +35,7 @@ class Programmer extends Employee {
         this.lang = lang;
     }
     set salary(val) {
-        this._salary = Math.floor(val/36.6)*3;
+        this._salary = Math.floor(val/36.6) * 3;
         return this._salary 
     }
     get salary() {
