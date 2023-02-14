@@ -6,14 +6,14 @@ class Employee {
         this.salary = salary
     }
     set name(value){
-        return this._name = value.toUpperCase();
+        this._name = value.toUpperCase();
     }
     get name() {
         return this._name;
     }
     set age(value) {
         const date = new Date()
-        return this._age = date.getFullYear()-value;
+        this._age = date.getFullYear()-value;
     }
     get age() {
         return this._age + ' YEAR';
@@ -21,7 +21,6 @@ class Employee {
 
     set salary(value) {
         this._salary = Math.floor(value/36.6);
-        return this._salary
     }
 
     get salary() {
@@ -36,7 +35,6 @@ class Programmer extends Employee {
     }
     set salary(val) {
         this._salary = Math.floor(val/36.6) * 3;
-        return this._salary 
     }
     get salary() {
         return this._salary + ' USD'

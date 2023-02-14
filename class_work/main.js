@@ -40,38 +40,41 @@ class Modal {
 
 }
 
-// class Inpute extends Modal {
-//     constructor(type, name, require, id, classes, placeholder, errorText) {
-//         super(id, classes)
-//         this.type = type
-//         this.name = name
-//         this.require = require
-//         this.id = id
-//         this.classes = classes
-//         this.placeholder = placeholder
-//         this.errorText = errorText
-//     }
-//     render() {
-//         try {
-//             const x = document.createElement("input")
-//             x.type = this.type
-//             x.name = this.name
-//             x.id = this.id
-//             x.placeholder = this.placeholder
-//             x.className = this.classes
-//             x.required = this.require
-//             return x;
-//         }
-//         catch (e) {
-//             console.log(e)
-//         } finally {
-//             console.log("hhhh")
-//         }
-//     }
-//     handleBlur() {
-//         pass
-//     }
-// }
+class Inpute extends Modal {
+    constructor(type, name, require, id, classes, placeholder, value, errorText, formId) {
+        super(id, classes)
+        this.type = type
+        this.name = name
+        this.require = require
+        this.placeholder = placeholder
+        this.value=value
+        this.errorText = errorText
+        this.formId = formId
+    }
+    render1() {
+        const form = document.createElement("form");
+        form.id = this.formId;
+        
+        const x = document.createElement("input")
+            x.type = this.type
+            x.name = this.name
+            x.placeholder = this.placeholder
+            x.value = this.value
+            x.required = this.require
+   
+        form.appendChild(x)
+        return form;
+        // }
+        // catch (e) {
+        //     console.log(e)
+        // } finally {
+        //     console.log("hhhh")
+        // }
+    }
+    handleBlur() {
+        pass
+    }
+}
 
 class Registration extends Modal {
     constructor(id, classes, formId) {
@@ -152,28 +155,30 @@ class Authorisation extends Modal {
 
 const root = document.getElementById("root");
 
-const modal1 = new Registration("modal1", "modal modal-green", "register-form");
-const modal2 = new Authorisation("modal2", "modal modal-green", "login-form");
-// const modal3 = new Inpute('submt', 'jk', false, "login-form", 'modal modal-green', "Вход", 'Жопа')
+// const modal1 = new Registration("modal1", "modal modal-green", "register-form");
+// const modal2 = new Authorisation("modal2", "modal modal-green", "login-form");
+const modal3 = new Inpute('submit', '', false, "modal3", 'modal modal-green', '', 'Вход','Жопа',"login-form")
 
 // type, name, require, id, classes, placeholder, errorText
 
 // console.log(modal1.createRegister());
 // console.log(modal2.createAuthorisation());
-// console.log(modal3.render());
+console.log(modal3.render());
 
 // root.append(modal1.render(modal1.createRegister()));
 // root.append(modal2.render(modal2.createAuthorisation()));
-// root.append(modal3.render());
+root.append(modal3.render(modal3.render1()));
 
 // const myBtn = document.getElementById("myBtn");
 // myBtn.addEventListener("click", modal1.openModal.bind(modal1));
 
-// const myBtn1 = document.getElementById("myBtn1");
-// myBtn1.addEventListener("click", modal3.openModal.bind(modal3));
+const myBtn1 = document.getElementById("myBtn1");
+myBtn1.addEventListener("click", modal3.openModal.bind(modal3));
 
-let x = new Set()
-x.addcolor = 2
-x.name = "vasya"
-x.dom = 'my'
-console.log(x.size)
+const p = "{a: 3}"
+function parseJSON(param) {
+     return   JSON.parse(p);
+}
+
+const res = parseJSON(p);
+console.log(res)
