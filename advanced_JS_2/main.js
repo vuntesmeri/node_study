@@ -36,7 +36,7 @@ function booksList1(books) {
     const booksListCreator = books.reduce((rootElem, element) => {
         try {
             if (Object.keys(element).length < 3) {
-            throw new Error(`${Object.entries(element)} has No ${[ 'author', 'name', 'price' ].filter(el => Object.keys(element).includes(el)==false)} data`);
+            throw new Error(`${JSON.stringify(element)} No ${[ 'author', 'name', 'price' ].filter(el => Object.keys(element).includes(el)==false)} data`);
             }
             const elemWhatInput = document.createElement("ul");
             for (key in element) {
