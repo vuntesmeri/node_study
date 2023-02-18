@@ -44,6 +44,6 @@ class Programmer extends Employee {
 const prog_1 = new Programmer("Pavel", "16", 15000, "JS");
 console.log('Programmer_1 - ',prog_1.salary)
 const prog_2 = new Programmer("Gregory", "23", 120000, "Java");
-console.log('Programmer_1 - ',prog_2)
+console.log('Programmer_2 - ',prog_2)
 const prog_3 = new Programmer("Olga", "13", 5000, "HTML");
-console.log('Programmer_1 - ', prog_3)
+console.log('Programmer_3 - ', prog_3)
