@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "Fish",
+      "intro": " name it",
+      "text": "never mined",
+      "data": "2023-02-10",
+      "author": "Julia",
+      "id": 2
+    },
+    {
+      "title": "Table",
+      "intro": " go it",
+      "text": "always mined",
+      "data": "2023-02-26",
+      "author": "Olga",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

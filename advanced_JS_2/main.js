@@ -32,7 +32,7 @@ const elemWhereInput = document.getElementById("root");
 //     return booksListCreator
 // }
 
-function booksList1(books) {
+function createBooksList(books) {
     const booksListCreator = books.reduce((rootElem, element) => {
         try {
             if (Object.keys(element).length < 3) {
@@ -86,5 +86,17 @@ const books = [
 ];
 
 
-// booksList(books);
-booksList1(books);
+createBooksList(books);
+
+// let animal = {
+//   eats: true
+// };
+// let rabbit = {
+//   jumps: true
+// };
+
+// rabbit.__proto__ = animal.proyotype; // (*)
+
+// // теперь мы можем найти оба свойства в rabbit:
+// console.log(Object.getOwnPropertyNames(rabbit)); // true (**)
+// console.error(animal.jumps); // true
