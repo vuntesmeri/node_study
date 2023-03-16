@@ -1,8 +1,10 @@
 class Modal{
-  constructor(el, title, text) {
+  constructor(el, title, text, headerTitle, headerText  ) {
     this.el = el
     this.title = title;
     this.text = text;
+    this.headerTitle = headerTitle;
+    this.headerText = headerText
   }
   renderModal() {
     const modal = document.createElement('form');
@@ -13,7 +15,7 @@ class Modal{
     modal.style.position = 'absolute';
 
     const titleLabel = document.createElement('label');
-    titleLabel.textContent = 'Edit Title'
+    titleLabel.textContent = this.headerTitle
     const titleEdit = document.createElement('textarea');
     titleEdit.rows = '5';
     titleEdit.cols = '100';
@@ -23,7 +25,7 @@ class Modal{
     titleLabel.append(titleEdit);
 
     const textLabel = document.createElement('label');
-    textLabel.textContent = 'Edit Text';
+    textLabel.textContent = this.headerText;
     const textEdit = document.createElement('textarea');
     textEdit.rows = '10';
     textEdit.cols = '100';
@@ -89,7 +91,7 @@ class Card{
     buttonEdit.style.marginInline = '2px';
     buttonEdit.className = 'post-edit';
     buttonEdit.addEventListener('click', () => {
-      const form = new Modal(cardBody, this.title, this.text)
+      const form = new Modal(cardBody, this.title, this.text, 'Edit Title', 'Edit Text')
       const editor = form.renderModal(cardBody).elements;
       editor[2].addEventListener('click', () => {
         fetch(`https://ajax.test-danit.com/api/json/posts/${this.id}`,
@@ -114,7 +116,7 @@ class Card{
     cardBody.append(buttonEdit);
     cardBody.id = this.id;
     cardBody.className = 'card-body';
-    cardBody.style.backgroundColor = "#000";
+    cardBody.style.backgroundColor = "black";
     cardBody.style.padding = '20px';
     cardBody.style.margin = '20px';
     root.insertAdjacentElement('afterbegin',cardBody);
@@ -172,7 +174,7 @@ class newPost{
     buttonAdd.style.margin = '20px';
     this.root.insertAdjacentElement('beforebegin', buttonAdd);
     buttonAdd.addEventListener('click', () => {
-    const addPost = new Modal(this.root, null, null);
+    const addPost = new Modal(this.root, null, null, 'Post Title', 'Post Text');
     const newPostRender = addPost.renderModal(this.root).elements;
     newPostRender[2].addEventListener('click', () => {
       fetch("https://ajax.test-danit.com/api/json/posts", {
