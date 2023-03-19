@@ -1,0 +1,62 @@
+.body {
+    position: absolute;
+    top: 2vw;
+    right: 23vw;
+    border: 4px solid grey;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 10px;
+    margin: 2vw;
+    width: 52vw;
+    background-color: lightgray;
+    padding: 2vw;
+
+}
+
+@media (max-width: 580px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.select {
+    padding: 1vw;
+    background-color: lightgray;
+    display: flex;
+    width: 56vw;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2vw;
+}
+
+.textarea {
+    height: 5vh;
+    resize: none;
+}
+
+.field {
+    min-height: 4vh;
+}
+
+.create-button {
+    margin: 2vw;
+    background-color: lightgray;
+    padding: 1vw;
+    width: 30vw;
+}
+
+.cansel-button {
+    margin: 2vw;
+    background-color: black;
+    color: white;
+    padding: 1vw;
+    width: 20vw;
+    float: right;
+}
+
+.error {
+    background-color: brown;
+}
