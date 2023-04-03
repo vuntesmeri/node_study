@@ -1,0 +1,56 @@
+.outer {
+    background-color: rgba(232, 220, 220, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    & .modal {
+        color: aliceblue;
+        font-family: 'Times New Roman', Times, serif;
+        width: 400px;
+        height: 200px;
+        margin: auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: crimson;
+
+
+        & h2 {
+            margin-top: 0px;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: brown;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        & p {
+
+            font-size: 14px;
+            font-weight: 200;
+            text-align: center;
+            white-space: pre-line;
+        }
+
+        & div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+        & .modal__buttons {
+            padding: 5px 20px;
+            font-size: 16px;
+            font-weight: 200;
+            margin: 10px;
+            color: antiquewhite;
+        }
+    }
+}

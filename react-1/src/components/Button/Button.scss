@@ -1,0 +1,26 @@
+div {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button {
+    margin: 6em;
+    padding: 1em 2em;
+    font-size: 2em;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    border: grey solid;
+    width: max-content;
+}
+
+/* .button:hover {
+    background-color: aqua;
+}
+
+.button:active {
+    background-color: #e6e6e6;
+} */
