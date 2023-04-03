@@ -31,7 +31,7 @@ Modal.propTypes = {
     header: PropTypes.string,
     text: PropTypes.string,
     actionClose: PropTypes.func,
-    handleClick: PropTypes.func,
+    handleOuterClick: PropTypes.func,
     actions: PropTypes.node,
     closeButton: PropTypes.bool
 }
