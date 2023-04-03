@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Button from "../Button/Button";
 import Modal from "../Modal/Modal";
 
@@ -15,10 +15,7 @@ class App extends Component {
     closeRedModal = () => { this.setState({ ModalRedIsOpen: false }) }
     openGreenModal = () => { this.setState({ ModalGreenIsOpen: true }) }
     closeGreenModal = () => { this.setState({ ModalGreenIsOpen: false }) }
-    handleOuterClick = (e) => {
-        if (e.target.closest('div').className === 'outer' && this.state.ModalRedIsOpen) { this.closeRedModal() }
-        else if (e.target.closest('div').className === 'outer' && this.state.ModalGreenIsOpen) { this.closeGreenModal() }
-    }
+
 
     render() {
         return (
@@ -41,12 +38,10 @@ class App extends Component {
                         header={'Do you want to delete this file?'}
                         closeButton={true}
                         text={`Once you delete this file, it won"t be possible to undo action. \n  Are you sure you want to delete?`}
-                        actions={this.closeRedModal}
-                        onClick={this.handleOuterClick}
-                        buttonText1='Ok'
-                        buttonText2='Cancel'
-                        color1='grey'
-                        color2='cadetblue' />
+                        actionClose={this.closeRedModal}
+                        actions={<><Button className='button' text='Ok' onClick={this.closeRedModal} backgroundColor='grey' />
+                            <Button className='button' text='Cancel' onClick={this.closeRedModal} backgroundColor='cadetblue' /></>}
+                    />
 
                 )
                 }
@@ -56,13 +51,11 @@ class App extends Component {
                         header={'Join our mailing list'}
                         closeButton={false}
                         text={`Sign up for our mailing list to stay up to date on the latest news and promotions. \n  Are you sure you want to join?`}
-                        actions={this.closeGreenModal}
-                        onClick={this.handleOuterClick}
-                        buttonText1='Sign up now'
-                        buttonText2='Maybe later'
-                        color1='lightcoral'
-                        color2='lightseagreen' />
-                    )
+                        actionClose={this.closeGreenModal}
+                        actions={<><Button className='button' text='Sign up now' onClick={this.closeGreenModal} backgroundColor='lightcoral' />
+                            <Button className='button' text='Maybe later' onClick={this.closeGreenModal} backgroundColor='lightseagreen' /></>}
+                    />
+                )
                 }</div>
         )
     }

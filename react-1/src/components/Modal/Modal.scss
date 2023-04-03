@@ -38,14 +38,14 @@
             white-space: pre-line;
         }
 
-        & div {
+        & .modal__buttons {
             display: flex;
             flex-direction: row;
             justify-content: center;
 
         }
 
-        & .modal__buttons {
+        & .button {
             padding: 5px 20px;
             font-size: 16px;
             font-weight: 200;

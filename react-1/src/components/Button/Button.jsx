@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import PropTypes from 'prop-types';
 import './Button.scss';
 
@@ -18,8 +18,8 @@ class Button extends Component {
     }
 }
 Button.propTypes = {
-    backgroundColor: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
+    backgroundColor: PropTypes.string,
+    text: PropTypes.string,
     onClick: PropTypes.func.isRequired,
     className: PropTypes.string
 }
