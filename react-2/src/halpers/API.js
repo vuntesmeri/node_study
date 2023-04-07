@@ -1,0 +1,1 @@
+export const API_URL = './products.json'
