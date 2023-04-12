@@ -19,7 +19,6 @@ class CartButton extends Component {
     }
 }
 CartButton.propTypes = {
-    addCart: PropTypes.func.isRequired,
     toggle: PropTypes.func.isRequired,
     text: PropTypes.string,
     backgroundColor: PropTypes.string,
