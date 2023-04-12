@@ -21,12 +21,7 @@ class App extends Component {
   componentDidMount() {
     getJSON(API_URL)
       .then(data => this.setState({ products: data }))
-    // this.setState({ favoriteCount: })
-    // this.setState({ arrFavorite: Object.assign(this.state.arrFavorite, favoriteCount) })
     this.setState({ countFavorite: this.state.favoriteCount.length })
-
-    // this.setState(cartCount : )
-    // this.setState({ arrCart: Object.assign(this.state.arrCart, cartCount) })
     this.setState({ countCart: this.state.cartCount.length })
   }
 
@@ -45,8 +40,13 @@ class App extends Component {
   render() {
 
     return (<>
-      <Header changeFavorite={this.state.countFavorite} changeCart={this.state.countCart} />
-      <List products={this.state.products} InFavorite={this.state.favoriteCount} InCart={this.state.cartCount} addCounterFavorite={this.addCounterFavorite} addCounterCart={this.addCounterCart} /></>
+      <Header changeFavorite={this.state.countFavorite}
+        changeCart={this.state.countCart} />
+      <List products={this.state.products}
+        InFavorite={this.state.favoriteCount}
+        InCart={this.state.cartCount}
+        addCounterFavorite={this.addCounterFavorite}
+        addCounterCart={this.addCounterCart} /></>
     );
   }
 }

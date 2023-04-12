@@ -48,7 +48,7 @@ class List extends Component {
 
     addToCart = (product) => {
         this.ToCart('cartItems', product)
-        // this.props.addCounterCart()
+        this.props.addCounterCart()
     }
 
     addToFavorite = (product) => {
@@ -67,9 +67,6 @@ class List extends Component {
     render() {
         const { isOpenModal, selectedProduct } = this.state;
         const { products } = this.props
-        // handleHeader = () => {
-        //     return this.inCart(selectedProduct) ? 'Product has been removed from the cart!' : 'Product has been added to the cart!'
-        // }
         return (
             <div className='list__card'>
                 {products.map((product) => (
@@ -108,13 +105,16 @@ class List extends Component {
                     closeButton={true}
                     text={`${selectedProduct.name} \n  price :  USD ${selectedProduct.price}`}
                     actionClose={this.toggleModal}
-                    actions={<><Button text="Ok" backgroundColor='#f8b803' onClick={() => {
-                        this.addToCart(selectedProduct)
-                        this.props.addCounterCart()
-                        this.toggleModal()
-                    }
-                    } />
-                        <Button text="Cancel" backgroundColor='black' onClick={this.toggleModal} /></>}
+                    actions={<><Button text="Ok"
+                        backgroundColor='#f8b803'
+                        onClick={() => {
+                            this.addToCart(selectedProduct)
+                            this.toggleModal()
+                        }
+                        } />
+                        <Button text="Cancel"
+                            backgroundColor='black'
+                            onClick={this.toggleModal} /></>}
 
                 />}
             </div >

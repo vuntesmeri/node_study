@@ -33,25 +33,7 @@ class Card extends Component {
                         {actFav}
                         {actCart}
                     </div>
-
                 </div>
-                {/* {this.state.isOpenModal && this.state.InCart && <Modal
-                    className='modal'
-                    header='Product has been added to the cart!'
-                    closeButton={true}
-                    text={`${name} \n  price :  USD ${price}`}
-                    actionClose={
-                        this.toggleModal}
-                    actions={<img src={image} alt='name' />}
-                />} */}
-                {/* {this.state.isOpenModal && !this.state.InCart && <Modal
-                    className='modal'
-                    header='Product has been removed from the cart!'
-                    closeButton={true}
-                    text={`${name} \n  price :  USD ${price}`}
-                    actionClose={
-                        this.toggleModal}
-                />} */}
             </div>
         )
     }
@@ -65,8 +47,6 @@ Card.propTypes = {
     description: PropTypes.string.isRequired,
     features: PropTypes.node,
     actions: PropTypes.node,
-    // addCounterCart: PropTypes.func.isRequired,
-    // addCounterFavorite: PropTypes.func.isRequired
 };
 
 Card.defaultProps = {
