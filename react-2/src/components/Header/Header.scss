@@ -26,7 +26,10 @@
         align-items: flex-end;
         gap: .1em;
 
-        & div {
+        & .my__count {
+            font-size: 1.3em;
+            font-weight: 900;
+            color: darkgoldenrod;
             align-self: first baseline;
         }
     }

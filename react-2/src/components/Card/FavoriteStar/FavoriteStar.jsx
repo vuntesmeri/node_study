@@ -1,17 +1,19 @@
 import { Component } from 'react'
-import { ReactComponent as StarIconBefore } from '../FavoriteStar/FavoriteStarBefore.svg'
-import { ReactComponent as StarIconAfter } from '../FavoriteStar/FavoriteStarAfter.svg'
+import { ReactComponent as StarIcon } from '../FavoriteStar/FavoriteStar.svg'
+
 import './FavoriteStar.scss'
 import PropTypes from 'prop-types'
 
 class FavoriteStar extends Component {
     render() {
-        const { addFavorite, id, clicked, backgroundColor } = this.props
+        const { addFavorite, id, InFavorite } = this.props
         return (
             <div className='star'
                 id={id}
-                onClick={addFavorite}>
-                {clicked ? <StarIconBefore /> : <StarIconAfter />}
+                onClick={() => {
+                    addFavorite()
+                }} >
+                {InFavorite ? <StarIcon fill="#f8b803" /> : <StarIcon fill="grey" />}
             </div>
         )
     }

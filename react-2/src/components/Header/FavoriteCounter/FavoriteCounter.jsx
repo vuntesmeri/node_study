@@ -1,13 +1,11 @@
 import { Component } from 'react'
-import './FavoriteCounter.scss'
 import PropTypes from 'prop-types';
 
 class FavoriteCounter extends Component {
     render() {
         const { changeFavorite } = this.props
-
         return (
-            <div className='favorite__count'>{changeFavorite}</div>
+            <div className='my__count'>{changeFavorite}</div>
         )
     }
 }

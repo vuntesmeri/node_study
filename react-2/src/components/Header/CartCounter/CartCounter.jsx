@@ -1,5 +1,4 @@
 import { Component } from 'react'
-import './CartCounter.scss'
 import PropTypes from 'prop-types';
 
 class CartCounter extends Component {
@@ -7,7 +6,7 @@ class CartCounter extends Component {
         const { changeCart } = this.props
 
         return (
-            <div className='cart__count'>{changeCart}</div>
+            <div className='my__count'>{changeCart}</div>
         )
     }
 }

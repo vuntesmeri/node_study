@@ -4,14 +4,14 @@ import PropTypes from 'prop-types'
 
 class CartButton extends Component {
     render() {
-        const { addCart, toggle, incart } = this.props
+        const { toggle, id, InCart } = this.props
         return (
             < Button className='button'
-                text={incart ? "In Cart" : "Add to Cart"}
+                id={id}
+                text={InCart ? "In Cart" : "Add to Cart"}
                 backgroundColor='black'
                 onClick={() => {
                     toggle()
-                    addCart()
                 }
                 }
             />
@@ -21,7 +21,6 @@ class CartButton extends Component {
 CartButton.propTypes = {
     addCart: PropTypes.func.isRequired,
     toggle: PropTypes.func.isRequired,
-    incart: PropTypes.bool.isRequired,
     text: PropTypes.string,
     backgroundColor: PropTypes.string,
 }
