@@ -1,0 +1,88 @@
+.card {
+    box-shadow: -2px -2px 4px 1px darkgray;
+    display: flex;
+    flex-direction: column;
+    // width: 20vw;
+    background-color: gray;
+}
+
+.card__image {
+    padding: .2em;
+    height: 20vw;
+}
+
+.card__title {
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    flex-grow: 1;
+    font-size: .8em;
+    font-weight: 500;
+
+    & p {
+        width: 6em;
+    }
+}
+
+.card__info {
+    padding: 0 1em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info__description {
+    font-size: 1em;
+    font-weight: 200;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.info__features {
+    font-size: 1em;
+    font-weight: 200;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.features-name {
+    border-bottom: black solid;
+    // text-align: right;
+    padding: .3em .3em .3em 0;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    list-style: none;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
+
+}
+
+.card__tobuy {
+    margin: 0;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & .tobuy__price {
+        font-weight: 600;
+    }
+
+    & .tobuy__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+    }
+
+
+}

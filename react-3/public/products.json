@@ -1,0 +1,162 @@
+[
+    {
+        "id": 0,
+        "name": "Raven Bee RB500 Exotic Style Guitar",
+        "image": "/img/electric/electric_guitar_RB500.jpg",
+        "price": 450.0,
+        "type": "electric",
+        "code": 4422,
+        "description": "This guitar is for those who are ready to amaze others and stand out from the crowd! The unique design of this guitar will be visible from afar.",
+        "features": " Body wood: alder ; Scale length: 25.5 ; Fingerboard radius: 10-14 ; Control layout: 1 volume, 1 tone"
+    },
+    {
+        "id": 1,
+        "name": "Dickson Studio ER100 Electric Guitar",
+        "image": "/img/electric/electric_guitar_ER100.jpg",
+        "price": 180.0,
+        "type": "electric",
+        "code": 4423,
+        "description": "This guitar was first introduced back in 1985 and is still one of the most beloved guitars among our customers.",
+        "features": "Double cutaway; Solid maple; Scale length: 25.5 in."
+    },
+    {
+        "id": 2,
+        "name": "Dean Doe TRO4506 Electric Guitar",
+        "image": "/img/electric/electric_guitar_TRO4506.jpg",
+        "price": 220.0,
+        "type": "electric",
+        "code": 4426,
+        "description": "A bright guitar for your bright performances. It features a single-cut design, quality maple, and a deep sound you won't be disappointed with.",
+        "features": "Single cutaway ; Scale length: 24.75 in.; Number of frets: 21"
+    },
+    {
+        "id": 3,
+        "name": "Raven Classic RT45 Electric Guitar",
+        "image": "/img/electric/electric_guitar_RT45.jpg",
+        "price": 300.0,
+        "type": "electric",
+        "code": 4445,
+        "description": "This electric guitar has a classic design and is created for ease of playability. The ultra-thin maple neck makes it easy to use the 22-fret fingerboard.",
+        "features": " Scale length: 25-1/2 ; Nut Width: 1.69\"(43mm) ; Controls: Volume, Tone, 5-way blade pickup selector"
+    },
+    {
+        "id": 4,
+        "name": "Deanson VV02 Acoustic Guitar",
+        "image": "/img/acoustic/acoustic_guitar_VV02.jpg",
+        "price": 112.0,
+        "type": "acoustic",
+        "code": 4447,
+        "description": "This nice-looking classic guitar has a sweet, articulate sound. It is great for any music styles from fingerpicking to robust strumming.",
+        "features": " 24 3/4\" scale length ; Spruce top ; Rosewood fingerboard and bridge ; Synthetic bone nut and saddle"
+    },
+    {
+        "id": 5,
+        "name": "Kuro Music Studio S-35 Acoustic Guitar",
+        "image": "/img/acoustic/acoustic_guitar_S_35.jpg",
+        "price": 105.0,
+        "type": "acoustic",
+        "code": 4449,
+        "description": "Here's a great-looking acoustic guitar with a loud, bold sound and excellent features that are great for any musician seeking a well-built and easy-playing instrument.",
+        "features": " Agathis back and sides ; 25-1/2\" scale length ; Synthetic bone nut and saddle ; Slim neck profile"
+    },
+    {
+        "id": 6,
+        "name": "Raven RT1 Acoustic-Electric Guitar",
+        "image": "/img/acoustic/acoustic_guitar_RT1.jpg",
+        "price": 110.0,
+        "type": "acoustic",
+        "code": 4448,
+        "description": "This affordable instrument is a great entry-level 25.4\" scale guitar. It has a nato C-shaped neck, simulated belly bridge, and a simulated rosewood fingerboard.",
+        "features": " Nut width: 1.69\" (43mm) ; Number of frets: 20; Pickup/preamp: yes ; Preamp EQ: 3-band"
+    },
+    {
+        "id": 7,
+        "name": "Fogue RA-090 Acoustic Guitar",
+        "image": "/img/acoustic/acoustic_guitar_RA_090.jpg",
+        "price": 110.0,
+        "type": "acoustic",
+        "code": 4450,
+        "description": "This guitar is a perfect instrument for the beginner. The body depth and width give you a balanced tone. The guitar is simple and classy, nothing extra.",
+        "features": "6-string ; 25-3/8\" scale length ; C-shape neck ; 1-2/3\" nut width 16\" radius"
+    },
+    {
+        "id": 8,
+        "name": "BlueWater BWL1000 Ultimate Snare Drum",
+        "image": "/img/drums/drums_BWL1000.jpg",
+        "price": 145.0,
+        "type": "drums",
+        "code": 4490,
+        "description": "This guitar is for those who are ready to amaze others and stand out from the crowd! The unique design of this guitar will be visible from afar.",
+        "features": "Body wood: alder ; Scale length: 25.5 ; Fingerboard radius: 10-14 ; Control layout: 1 volume, 1 tone"
+    },
+    {
+        "id": 9,
+        "name": "Ericson Black&White Snare Drum",
+        "image": "/img/drums/drums_Black&White.jpg",
+        "price": 115.0,
+        "type": "drums",
+        "code": 4491,
+        "description": "This guitar is for those who are ready to amaze others and stand out from the crowd! The unique design of this guitar will be visible from afar.",
+        "features": "Body wood: alder ; Scale length: 25.5 ; Fingerboard radius: 10-14 ; Control layout: 1 volume, 1 tone"
+    },
+    {
+        "id": 10,
+        "name": "Ericson White Crystal Snare Drum",
+        "image": "/img/drums/drums_White_Cristal.jpg",
+        "price": 115.0,
+        "type": "drums",
+        "code": 4492,
+        "description": "This guitar is for those who are ready to amaze others and stand out from the crowd! The unique design of this guitar will be visible from afar.",
+        "features": "Body wood: alder ; Scale length: 25.5 ; Fingerboard radius: 10-14 ; Control layout: 1 volume, 1 tone"
+    },
+    {
+        "id": 11,
+        "name": "Ericson Beech Wood Snare Drum",
+        "image": "/img/drums/drums_Beach_Wood.jpg",
+        "price": 115.0,
+        "type": "drums",
+        "code": 4493,
+        "description": "This guitar is for those who are ready to amaze others and stand out from the crowd! The unique design of this guitar will be visible from afar.",
+        "features": "Body wood: alder ; Scale length: 25.5 ; Fingerboard radius: 10-14 ; Control layout: 1 volume, 1 tone"
+    },
+    {
+        "id": 12,
+        "name": "Donny Stavanger SRT12 Alto Saxophone",
+        "image": "/img/orchestric/orchestric_SRT12.jpg",
+        "price": 450.0,
+        "type": "orchestric",
+        "code": 4494,
+        "description": "This guitar is for those who are ready to amaze others and stand out from the crowd! The unique design of this guitar will be visible from afar.",
+        "features": "Body wood: alder ; Scale length: 25.5 ; Fingerboard radius: 10-14 ; Control layout: 1 volume, 1 tone"
+    },
+    {
+        "id": 13,
+        "name": "Simona SR-V Professional Violin",
+        "image": "/img/orchestric/orchestric_SR-V.jpg",
+        "price": 700.0,
+        "type": "orchestric",
+        "code": 4495,
+        "description": "This guitar is for those who are ready to amaze others and stand out from the crowd! The unique design of this guitar will be visible from afar.",
+        "features": "Body wood: alder ; Scale length: 25.5 ; Fingerboard radius: 10-14 ; Control layout: 1 volume, 1 tone"
+    },
+    {
+        "id": 14,
+        "name": "AER B-Flat Professional Bass Horn",
+        "image": "/img/orchestric/orchestric_AER_B-Flat.jpg",
+        "price": 300.0,
+        "type": "orchestric",
+        "code": 4496,
+        "description": "This guitar is for those who are ready to amaze others and stand out from the crowd! The unique design of this guitar will be visible from afar.",
+        "features": "Body wood: alder ; Scale length: 25.5 ; Fingerboard radius: 10-14 ; Control layout: 1 volume, 1 tone"
+    },
+    {
+        "id": 15,
+        "name": "Muratti Professional MB Oboe",
+        "image": "/img/orchestric/orchestric_MB.jpg",
+        "price": 900.0,
+        "type": "orchestric",
+        "code": 4497,
+        "description": "This guitar is for those who are ready to amaze others and stand out from the crowd! The unique design of this guitar will be visible from afar.",
+        "features": "Body wood: alder ; Scale length: 25.5 ; Fingerboard radius: 10-14 ; Control layout: 1 volume, 1 tone"
+    }
+]

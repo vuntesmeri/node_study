@@ -1,0 +1,57 @@
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0em auto .1em auto;
+    border-bottom: #f8b803 solid 1em;
+    padding: 1em 2em 0em 2em;
+
+    & h1 {
+        font-weight: 500;
+    }
+}
+
+.header {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 2em;
+
+    &__place {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        gap: .1em;
+
+        & .my__count {
+            font-size: 1.3em;
+            font-weight: 900;
+            color: darkgoldenrod;
+            align-self: first baseline;
+        }
+    }
+}
+
+.page {
+    width: 87.2vw;
+    display: grid;
+    margin: 1em auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.page__name {
+    width: 87.2vw;
+    margin: 1em auto;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: solid .2em black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
